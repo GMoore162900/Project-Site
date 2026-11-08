@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quickstart | <%= project.title %></title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="documentation-card">
+        <p class="eyebrow">Quickstart</p>
+        <h2>How to run the program in VS Code</h2>
+        <p>
+          Use the steps below to start the site from VS Code and open it in your browser.
+        </p>
+        <ol class="feature-list">
+          <li>Open the project folder in VS Code.</li>
+          <li>Select <strong>Run and Debug</strong> from the left sidebar.</li>
+          <li>Click the <strong>Run and Debug</strong> button to start the Node.js program.</li>
+          <li>Wait for the terminal output to show the localhost address for the running app.</li>
+          <li>Follow the localhost link, or open your browser and go to <strong>http://localhost:3000</strong>.</li>
+        </ol>
+        <p>
+          After the page opens, you should see the project home page and be able to navigate to the documentation, quickstart, and feature sections.
+        </p>
+        <figure class="screenshot-frame">
+          <img src="/images/run-debug.png" alt="VS Code Run and Debug view showing the localhost link in the terminal output" />
+          <figcaption>Example of starting the app from Run and Debug and then opening the localhost link.</figcaption>
+        </figure>
+        <div class="link-row">
+          <a class="button primary" href="<%= project.documentationUrl %>">Back to Documentation</a>
+          <a class="button secondary" href="<%= project.featuresUrl %>">Feature Page</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

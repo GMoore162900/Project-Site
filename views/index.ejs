@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= project.title %></title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">COMP-4420 Project Site</p>
+          <h1><%= project.title %></h1>
+          <p class="lede"><%= project.description %></p>
+          <ul class="feature-list">
+            <% project.features.forEach((feature) => { %>
+              <li><%= feature %></li>
+            <% }); %>
+          </ul>
+          <div class="link-row">
+            <a class="button primary" href="<%= project.repositoryUrl %>" target="_blank" rel="noreferrer">GitHub Repository</a>
+            <a class="button secondary" href="<%= project.documentationUrl %>">Documentation Page</a>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <h2>Running Application</h2>
+          <p class="panel-copy">This screenshot shows the inventory dashboard running with the current table and filter layout.</p>
+
+          <figure class="screenshot-frame">
+            <img src="<%= project.screenshotPath %>" alt="Screenshot of the Inventory Management Dashboard running in JavaFX" />
+            <figcaption>Dashboard screenshot shown on the project landing page.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <article class="info-card">
+          <h3>What the project does</h3>
+          <p>
+            The application supports campus inventory workflows for authorized users, including secure sign-in,
+            device tracking, and administrative management of the equipment catalog.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h3>Core rules</h3>
+          <ul>
+            <% project.rules.forEach((rule) => { %>
+              <li><%= rule %></li>
+            <% }); %>
+          </ul>
+        </article>
+      </section>
+
+      <section class="documentation-card" id="documentation">
+        <p class="eyebrow">Documentation</p>
+        <h2>Documentation will live here later</h2>
+        <p>
+          This project site already includes the link for the documentation page so it can be expanded later without
+          changing the landing page navigation.
+        </p>
+        <div class="link-row">
+          <a class="button primary" href="<%= project.repositoryUrl %>" target="_blank" rel="noreferrer">GitHub Repository</a>
+          <a class="button secondary" href="<%= project.documentationUrl %>">Documentation Page</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

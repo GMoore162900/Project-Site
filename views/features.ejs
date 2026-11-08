@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features | <%= project.title %></title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="documentation-card">
+        <p class="eyebrow">Features</p>
+        <h2>Program Pages and Features</h2>
+        <p>
+          This page explains the main screens in the inventory management program and what each one is used for.
+        </p>
+        <div class="link-row">
+          <a class="button primary" href="<%= project.documentationUrl %>">Back to Documentation</a>
+          <a class="button secondary" href="<%= project.quickstartUrl %>">Quickstart Page</a>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <article class="info-card">
+          <h3>Login Page</h3>
+          <p>
+            The login page is the entry point for the program. It allows authorized users to sign in before accessing
+            the inventory system. This supports the rule that only approved university users should be able to manage
+            or view device records.
+          </p>
+          <figure class="screenshot-frame">
+            <img src="/images/login.png" alt="Login screen for the inventory management system" />
+            <figcaption>The login page used to verify users before they enter the system.</figcaption>
+          </figure>
+        </article>
+
+        <article class="info-card">
+          <h3>Dashboard</h3>
+          <p>
+            The dashboard is the main page of the program. It shows the inventory table, filter options, and the
+            current list of devices. From this screen, users can review device details, check status information, and
+            move into the add or edit workflows.
+          </p>
+          <figure class="screenshot-frame">
+            <img src="/images/project-running.png" alt="Dashboard screen showing the inventory table and filters" />
+            <figcaption>The main dashboard where users view and manage the equipment inventory.</figcaption>
+          </figure>
+        </article>
+
+        <article class="info-card">
+          <h3>Add Device Page</h3>
+          <p>
+            The add device page is used to create a new inventory record. Users can enter information for a new piece
+            of equipment, such as its type, assignment details, and status, so it becomes part of the tracked device
+            list.
+          </p>
+          <figure class="screenshot-frame">
+            <img src="/images/add-device.png" alt="Add device form in the inventory management system" />
+            <figcaption>The add device screen used to enter a new item into the system.</figcaption>
+          </figure>
+        </article>
+
+        <article class="info-card">
+          <h3>Edit Device Page</h3>
+          <p>
+            The edit device page is used to update an existing inventory record. Users can change device details,
+            assignments, or status values when equipment changes over time, which helps keep the inventory accurate.
+          </p>
+          <figure class="screenshot-frame">
+            <img src="/images/edit-device.png" alt="Edit device form in the inventory management system" />
+            <figcaption>The edit device screen used to update an existing inventory entry.</figcaption>
+          </figure>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

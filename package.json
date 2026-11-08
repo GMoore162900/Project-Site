@@ -1,0 +1,14 @@
+{
+  "name": "it-asset-management-project-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Project site for the COMP-4420 IT Asset Management application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}

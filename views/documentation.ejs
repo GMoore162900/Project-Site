@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation | <%= project.title %></title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Documentation</p>
+          <h1>Project Documentation</h1>
+          <p class="lede">
+            This section will hold the setup guides, feature explanations, and project notes as the site grows.
+          </p>
+          <div class="link-row">
+            <a class="button primary" href="<%= project.quickstartUrl %>">Quickstart Page</a>
+            <a class="button secondary" href="<%= project.featuresUrl %>">Feature Page</a>
+            <a class="button secondary" href="/">Back to Home</a>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <h2>Planned Sections</h2>
+          <p class="panel-copy">The links below already point to placeholder pages so those sections can be filled in later without changing navigation.</p>
+          <ul class="feature-list">
+            <li>Quickstart instructions for running the project.</li>
+            <li>Feature documentation for inventory actions and validation rules.</li>
+            <li>Additional notes and screenshots as the project evolves.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
